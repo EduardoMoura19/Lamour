@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+}
+
+:root {
+    font-size: 100%;
+    /* 100% = 1rem */
+    --primary_color: hsl(0, 0%, 50%);
+    --placeholders: hsl(0, 0%, 95%);
+    --headline: hsl(210, 11%, 15%);
+    --paragraph: hsl(210, 10%, 20%);
+    --navmenu: hsl(100, 100%, 100%);
+}
+
+body {
+    font-family: 'DM Sans';
+    text-align: center;
+}
+
+#lamour_logo {
+    width: 12rem;
+}
+
+#placeholder_search {
+    width: 16rem;
+    height: 2.2rem;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.349);
+    background: transparent;
+    color: black;
+    padding-left: 1rem;
+    font-weight: bold;
+}
+
+#placeholder_search:active {
+    border: none;
+}
+
+.menu_nav {
+    display: flex;
+    top: 0;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 2%;
+    margin: 0.5rem 0;
+    background-color: transparent;
+}
+
+.nav_config {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 81rem;
+}
+
+.nav_body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 39.7rem;
+    background-size: cover;
+    padding: 1% 0%;
+    background-image: url("Imgs/mulheroculos.jpg");
+    box-shadow: inset 0px 0px 150px 0px rgba(0, 0, 0, 0.5);
+    background-color: var(--primary_color);
+}
+
+.text_config {
+    width: 100%;
+}
+
+.button_promo {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 4rem;
+    text-align: left;
+}
+
+.button_config {
+    width: 100%;
+    justify-content: start;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 3.5rem;
+}
+
+#button_veragora {
+    width: 15rem;
+    height: 2.5rem;
+    margin-top: 1rem;
+    background: white;
+    color: black;
+    border: none;
+    font-weight: 300;
+}
+
+#button_veragora:hover {
+    background: rgb(216, 216, 216);
+    opacity: 80%;
+}
+
+.nav_body h1,
+p {
+    color: var(--placeholders);
+    line-height: 150%;
+}
+
+.nav_tools {
+    display: flex;
+    justify-content: right;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+h4 {
+    color: var(--headline);
+    line-height: 180%;
+}
+
+h1 {
+    color: white;
+}
+
+
+/* PRODUTOS DO SITE */
+
+.division {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.product {
+    width: 15rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.product_labels {
+    width: 100%;
+    height: 100vh;
+}
+
+.product p {
+    color: black;
+}
+
+.product_photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-image: url(/Imgs/noImage.png);
+}
